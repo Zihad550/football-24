@@ -224,6 +224,17 @@
 
   .match-highlight__txt {
     flex-basis: 68%;
+    text-align: center;
+  }
+
+  .match-highlight button {
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+
+  .match-highlight__disc {
+    width: 40.4rem;
+    margin: 0 auto;
   }
 
   /* tablet-responsive-cards */
