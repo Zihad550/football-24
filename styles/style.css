@@ -1,0 +1,445 @@
+/* Table of contents
+* 1. fonts
+* 2. global
+* 3. common
+* 4. header
+*   4.1 nav
+* 5. players
+* 6. match-match-highlights
+* 7. news
+* 8. cards
+* 9. footer
+ */
+
+
+
+/*===================
+ fonts
+ ====================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+/*=============
+ global  css
+ ============= */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%
+}
+
+body {
+  margin: 0;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Poppins';
+  font-weight: 700;
+}
+
+p,
+button,
+a {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* =============
+common css
+============= */
+
+.container {
+  width: 116rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+
+}
+
+.primary__btn {
+  color: white;
+  background: #E02C6D;
+  display: flex;
+  width: 16.8rem;
+  height: 4.4rem;
+  justify-content: center;
+  align-items: center;
+  /* padding: 1rem 2.4rem; */
+  border: none;
+  outline: none;
+}
+
+.btn--icon {
+  font-size: 1.6rem;
+  margin-left: .8rem;
+}
+
+.primary__btn:hover {
+  background: white;
+  border: 1px solid #E02C6D;
+  transition: background .3s;
+  cursor: pointer;
+  color: #2D25A0;
+  ;
+
+}
+
+/*===============
+header area css start
+================== */
+
+/* navigation menu css start*/
+#nav {
+  display: flex;
+  flex-basis: 100%;
+  height: 4.4rem;
+  justify-content: space-between;
+  margin: 2rem 0 7rem;
+}
+
+.nav__list,
+.navlist-2 {
+  list-style: none;
+}
+
+.nav__list {
+  display: flex;
+  padding: 0;
+  justify-content: space-evenly;
+}
+
+.nav__list--item {
+  margin: 0 3.6rem;
+}
+
+.nav__list--item:first-child {
+  margin-left: 0;
+}
+
+.nav__list--item a {
+  text-decoration: none;
+  color: white;
+  transition: color .2s;
+}
+
+.nav__list--item a:hover {
+  color: #E02C6D;
+
+}
+
+.navlist-2 i {
+  margin-right: 1rem;
+}
+
+/* navigation menu css ends*/
+
+#header {
+  color: white;
+  background: #2D25A0;
+  padding-bottom: 5rem;
+}
+
+.header--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header__txt {
+  flex-basis: 43.2%;
+  margin-right: 10.2rem;
+}
+
+.header__banner {
+  flex-basis: 48%;
+}
+
+.header__heading {
+  font-size: 6.4rem;
+  line-height: 8rem;
+  margin-bottom: 2.7rem;
+}
+
+
+.header__banner img {
+  width: 55.6rem;
+  height: 43.8rem;
+  transition: transform .7s;
+}
+
+#header:hover img {
+  transform: scale(1.2);
+
+}
+
+/* ===========
+header area css end
+===================== */
+
+
+
+
+/* =====================
+players area css start
+================ */
+
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 33rem);
+  grid-template-rows: repeat(4, 1fr);
+  margin: 7rem;
+  grid-gap: 2.7rem 3rem;
+}
+
+.player {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.player__img {
+  overflow: hidden;
+}
+
+.player:hover img {
+  transform: scale(1.2);
+}
+
+.player__img img {
+  width: 30rem;
+  height: 25.6rem;
+  transition: transform .5s;
+}
+
+.player__name {
+  font-size: 2.8rem;
+  margin: 1.6rem 0 1rem;
+}
+
+.player__disc {
+  color: #6C6C6C;
+  height: 10.4rem;
+  overflow-y: scroll;
+
+}
+
+
+/* =====================
+players area css end
+================ */
+
+
+
+
+/* =====================
+match-highlights area css start
+================ */
+#match-highlights {
+  margin: 9.5rem 0 4rem;
+}
+
+.match-highlight {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.match-highlight__txt {
+  width: 46.9rem;
+  margin-right: 4.2rem;
+}
+
+.match-highlight__heading {
+  font-size: 4.8rem;
+  line-height: 6rem;
+  margin-bottom: .8rem;
+}
+
+.match-highlight__disc {
+  width: 40.4rem;
+  color: #6C6C6C;
+  margin-bottom: 2.4rem;
+
+}
+
+.match-highlight__img img {
+  width: 56.7rem;
+  height: 42.7rem;
+}
+
+/* =====================
+match-match-highlights area css end
+================ */
+
+
+
+
+
+
+/*===============
+ news area css start
+ =================*/
+#news {
+  background: url('../img/bg/bg-texture-grey.jpg');
+  background-size: cover;
+
+}
+
+/*===============
+ news area css end
+ =================*/
+
+
+
+
+
+/* =====================
+cards area css start
+================ */
+.responsive__cards {
+  padding: 0rem 0 6rem;
+}
+
+.responsive__cards__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.responsive__cards--heading {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+.responsive__cards--info {
+  color: #6C6C6C;
+  margin-top: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+
+
+}
+
+.card:first-child {
+  margin-left: 0;
+}
+
+.card__img {
+  overflow: hidden;
+}
+
+.card:hover .card__img img {
+  transform: scale(1.2);
+
+
+
+}
+
+.card__img img {
+  width: 34rem;
+  height: 18rem;
+
+  transition: transform .7s;
+}
+
+.card__info {
+  width: 34rem;
+  background: #f8f6f6cc;
+  height: 16rem;
+  padding: 2rem;
+}
+
+.card__heading {
+  margin: 1rem 0;
+}
+
+.card__heading a {
+  font-size: 1.8rem;
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.card__heading:hover a {
+  color: #2D25A0;
+  transition: color .4s;
+}
+
+.card__disc {
+  color: #6C6C6C;
+  margin-top: .5rem;
+}
+
+/* =====================
+card area css end
+================ */
+
+
+
+
+
+
+/* =====================
+footer area css start
+================ */
+#footer {
+  margin-top: 9.8rem;
+  padding-bottom: 6.3rem;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__logo img {
+  width: 48.387rem;
+  height: 11rem;
+}
+
+.footer__icons {
+  margin: 2rem 0;
+}
+
+.footer__icons i {
+  font-size: 3.2rem;
+  margin: 0 1.4rem;
+}
+
+.footer__icons i:hover {
+  color: #2D25A0;
+  transition: color .3s;
+  cursor: pointer;
+}
+
+.footer__txt p {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+/* =====================
+footer area css end
+================ */
